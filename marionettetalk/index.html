@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testing Apps with Marionette</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type='text/css' href="./css/decky.css">
+    <link rel="stylesheet" type='text/css' href="./css/talk.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <article id="deck">
+		<section>
+			<h1>Testing Firefox OS Apps with Marionette</h1>
+		</section>
+		<section>
+  		  	<h1>What is  Marionette, Anyway??</h1>
+  		  	<ul>
+	  		  <li>based on the Webdriver JSON wire protocol</li>
+	  		  <li>is an up and coming standard for browser testing</li>
+	  		<li> We support a Python based client and test runner</li>
+  	  		</ul>
+		</section>
+
+<section>
+  <h2>How does it work?</h2>
+
+  <ul>
+  <li>Based on a client/server model</li>
+  <li>Server listens on port for client commands</li>
+  <li>Server uses the MessageManager to talk to chrome/content</li>
+  <li>Designed with out-of-process communication in mind</li>
+  </ul>
+</section>
+
+<section>
+	<h1> How is it being used?</h1>
+	<ul>
+		<li>Test FirefoxOS Desktop and device builds</li>
+		<li>Test WebAPI's like SMS/ Telephony etc</li>
+		<li>Test FirefoxOS apps</li>
+	</ul>
+</section>
+
+<section>
+  <h1>How can I use it?</h1>
+  <ul>
+	  <li> Marionette is enabled by default in:
+		  <br/>
+		  <ul>
+			  <li><a href="http://ftp.mozilla.org/pub/firefox"> http://ftp.mozilla.org/pub/firefox</a> desktop debug build</li>
+			  <li><a href="http://ftp.mozilla.org/pub/b2g/">http://ftp.mozilla.org/pub/b2g/</a> B2G desktop builds</li>
+		  </ul>
+			  
+	  </li>
+	  <br/>
+	  <li> By adding the following to user.js:
+		  
+		  <code>
+			  <br/>
+			  user_pref("marionette.defaultPrefs.enabled", true);
+			  <br/>
+			  user_pref("marionette.force-local", true);
+		  </code>
+	  </li>
+  </ul>
+</section>
+
+<section>
+  <h1>More Info?</h1>
+  <ul>
+	  <li> MDN - <a href='http://developer.mozilla.org/'> Marionette</a></li>
+	  <li> Github - <a href="https://www.github.com/mozilla/marionette">https://www.github.com/mozilla/marionette</a></li>
+	  <li> Github - <a href="https://www.github.com/mozilla/gaia-ui-tests">https://www.github.com/mozilla/gaia-ui-tests</li>
+	  <li> irc.mozila.org - #ateam, #mozwebqa</a>
+  </ul>
+</section>
+
+<section>
+  <h1>Demo</h1>
+</section>
+<section>
+  <h1>Thanks!</h1>
+  <ul>
+    <li>retornam@mozilla.com</li>
+    <li>github.com/retornam</li>
+    <li>@retornam</li>
+  </ul>
+</section>
+</article>
+
+    <script src="./js/µ.js"></script>
+    <script src="./js/decky.js"></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  </body>
+</html>
